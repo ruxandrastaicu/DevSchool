@@ -3,12 +3,52 @@
     <head>
         <title>Ruxandra's CV</title>
         <meta charset="utf-8">
+        <style>
+          header{
+            z-index: 1;
+            height:130px;
+            width: 100%;
+            background-color: rgb(186, 209, 191);/
+          }
+          address{
+            height:160px;
+            width: 100%;
+            background-color: rgb(207, 231, 207);
+          }
+          hr{
+            border: 0;
+            box-shadow: 0 0 10px 1px rgb(120, 214, 175);
+          }
+          h2{
+            box-sizing: border-box;
+            width: 160px;
+            height: 80px;
+            padding: 3px;  
+            border: 10px groove  rgb(167, 226, 221);
+            text-align: center;
+          }
+          .content{
+            float: left;
+            margin-top: 1px;
+            padding-left:5px;
+            height: auto;
+            width: 99%;
+            background-color: rgb(216, 236, 203);
+          }
+          #tounderline{
+            height:5px;
+            text-decoration:underline;
+          }
+        </style>
     </head>
     <body>
-        <div class="header">
+        <div class="mycv">
+            <header>
             <h1>Curriculum Vitae</h1>
-            <p><strong>Ruxandra-Mihaela STAICU</strong> - ambitious, sociable, friendly, responsable, fast-learner</p>
-           <hr>
+            <p><strong>Ruxandra-Mihaela STAICU</strong></p>
+            <p> short description: ambitious, sociable, friendly, responsable, fast-learner</p>
+          </header>
+          <hr>
             <address>
                 <p>Birthdate: 9th June 1997</p>
                 <p>Address: Bucharest, Romania</p>
@@ -16,81 +56,92 @@
                 <p>Email:<a href="mailto:ruxandrastaicu@yahoo.com">ruxandrastaicu@yahoo.com</a></p>               
                 <p>Website:<a href="http://example.com">http://ruxandrastaicu.com</a> </p>
             </address>
-            <hr>
-            <h2>Education</h2>
-            <p><u>Institution</u>: <i>Faculty of Automatic Control and Computer Science<br></i>
-              <u> period of time</u>: 2016-Present
-            </p>
-            <p><u>Institution</u>: <i>Faculty of Science and Engineering, University of Groningen</i>, The Netherlands - Erasmus+ Programm<br>
-                <u> period of time</u>: September 2018-February 2019
-            </p>
-            <p><u>Institution</u>: <i>National College "Ion Maiorescu" Giurgiu, Romania<br></i>
-                <u> period of time</u>: 2012-2016
-            </p>
-            <h2>Professional Experience</h2>
-              <p><u>Institution</u>: Bitdefender SRL<br>
-                <u>position:</u> Quality Assurance Analyst - Intern<br>
-                <u> period of time</u>: 07.2019-10.2019
-              </p>
-              <p><u>Institution</u>: Oracle Romania<br>
-                <u>position:</u> Security Solution Engineer - Intern<br>
-                <u> period of time</u>: 03.2019-06.2019
-              </p>
-              <p><u>Institution</u>: Edusfera Association<br>
-                <u>position:</u> Trainer for Digital Kids Programm<br>
-                <u> period of time</u>: 04.2018-06.2018
-              </p>
-            <h2>Volunteering Experience</h2>
-              <p><u>Association/Institution</u>: Codette<br>
-                <u>period of time</u>: 2018-present
-              </p>
-              <p><u>Association/Institution</u>: The League of Automatic Control and Computer Science Students<br>
-                <u>period of time</u>: 10.2016-06.2019
-              </p>  
-              <p><u>Association/Institution</u>: Red Cross Romania<br>
-                <u>period of time</u>: 05.2010-06.2014
-              </p> 
-            <h2>Personal Projects</h2>
-              <p>
-                  <ul>
-                    <li><i>The Hangman Game</i> <p> An implementation of Hangman Game in C, using ncureses library, which can be played in console (01.2017)</p></li>
-                    <li><i>Process Planner</i><p>A data structures project implemented in C, which planify the processes accordingt to the Round Robin algorithm (04.2017)</p></li>
-                    <li><i>System of tax bills</i><p>A Java application for a system of tax bills, using a basic graphical interface with different functionalities (12.2017)</p></li>
-                    <li><i>Internet banking system</i><p>A client-server application in C that performs online banking functionalities by using UDP and TCP sockets (04.2018) </p></li>
-                </ul>
-              </p>
-            <h3>Techincal Skills</h3> 
-            <p>
-                <ul>
-                    <li>LINUX</li>
-                    <li>JAVA</li>
-                    <li>C/C++</li>
-                    <li>MATLAB</li>
-                 </ul> 
-            </p>
-            <h3>Foreign Languages</h3>
-            <p>
-                <u>language</u>: English
-                <u>level</u>: C1
-            </p>
-            <p>
-                <u>language</u>: German
-                <u>level</u>: B1
-            </p>
-            <p>
-                <u>language</u>: French
-                <u>level</u>: A1-A2
-            </p>
-            <h3>Hobbys</h3>
-            <p>
-                <ul>
-                    <li>THEATRE</li>
-                    <li>TRAVELLING</li>
-                    <li>DANCING</li>
-                    <li>SKIING</li>
-                    <li>HOME-DECO</li>
-                </ul>
-            </p>
+          <hr>
         </div>
+        <div class="content">
+          <section>
+            <h2>Education</h2>
+            <p><span id="tounderline">Institution</span>: <i>Faculty of Automatic Control and Computer Science<br></i>
+               <span id="tounderline">period of time</span>: 2016-Present
+            </p>
+            <p>Institution: <i>Faculty of Science and Engineering, University of Groningen</i>, The Netherlands - Erasmus+ Programm<br>
+               period of time: September 2018-February 2019
+            </p>
+            <p>Institution: <i>National College "Ion Maiorescu" Giurgiu, Romania<br></i>
+               period of time: 2012-2016
+            </p>
+          </section>
+          <section>
+            <h2>Professional Experience</h2>
+              <p>Institution: Bitdefender SRL<br>
+                 position: Quality Assurance Analyst - Intern<br>
+                 period of time: 07.2019-10.2019
+              </p>
+              <p>Institution: Oracle Romania<br>
+                 position: Security Solution Engineer - Intern<br>
+                 period of time: 03.2019-06.2019
+              </p>
+              <p>Institution: Edusfera Association<br>
+                 position: Trainer for Digital Kids Programm<br>
+                 period of time: 04.2018-06.2018
+              </p>
+          </section>
+          <section>
+            <h2>Volunteering Experience</h2>
+              <p>Association/Institution: Codette<br>
+                 period of time: 2018-present
+              </p>
+              <p>Association/Institution: The League of Automatic Control and Computer Science Students<br>
+                 period of time: 10.2016-06.2019
+              </p>  
+              <p>Association/Institution: Red Cross Romania<br>
+                 period of time: 05.2010-06.2014
+              </p> 
+          </section>
+          <section>
+            <h2>Personal Projects</h2>
+              <ul>
+                <li><i>The Hangman Game</i> <p> An implementation of Hangman Game in C, using ncureses library, which can be played in console (01.2017)</p></li>
+                <li><i>Process Planner</i><p>A data structures project implemented in C, which planify the processes accordingt to the Round Robin algorithm (04.2017)</p></li>
+                <li><i>System of tax bills</i><p>A Java application for a system of tax bills, using a basic graphical interface with different functionalities (12.2017)</p></li>
+                <li><i>Internet banking system</i><p>A client-server application in C that performs online banking functionalities by using UDP and TCP sockets (04.2018) </p></li>
+              </ul>
+          </section>
+          <section>
+            <h2>Techincal Skills</h2> 
+              <ul>
+                <li>LINUX</li>
+                <li>JAVA</li>
+                <li>C/C++</li>
+                <li>MATLAB</li>
+             </ul>
+          </section>
+          <section2>
+            <h2>Foreign Languages</h2>
+            <p>
+                language: English
+                level: C1
+            </p>
+            <p>
+                language: German
+                level: B1
+            </p>
+            <p>
+                language: French
+                level: A1-A2
+            </p>
+          </section2>
+          <section2>
+            <h2>Hobbys</h2>
+              <ul>
+                <li>THEATRE</li>
+                <li>TRAVELLING</li>
+                <li>DANCING</li>
+                <li>SKIING</li>
+                <li>HOME-DECO</li>
+              </ul>
+          </section2>
+        </div>
+        <div id="footer"></div>
     </body>
 </html>

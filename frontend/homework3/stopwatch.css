@@ -1,0 +1,31 @@
+
+html {
+    background: #333;
+    color: rgb(240, 22, 142);
+  }
+  #stopwatch {
+    font-size: 20vw;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+  }
+.buttons{
+    border-radius: 25px;
+    background: rgb(207, 41, 119);
+    font-size: 3vw;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+  }
+#startStop{
+    position: absolute;
+    margin-left:35%;
+    right: 20; 
+    top: 6em;
+}
+#reset{
+    position: absolute;
+    margin-left: 50%;
+    right: 15;
+    top: 6em;
+}
